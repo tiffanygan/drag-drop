@@ -1,4 +1,4 @@
-import { PrjListType } from "./PrjType.js";
+import { PrjListType } from "../state/PrjType.js";
 
 export default class Prj {
   public id: Number = -1;

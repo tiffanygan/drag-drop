@@ -1,6 +1,6 @@
 import Observer from "./Observer.js";
 import Prj from "../model/Prj.js";
-import { PrjListType } from "../model/PrjType.js";
+import { PrjListType } from "./PrjType.js";
 
 export default class PrjManager {
     private prjList: Prj[];
