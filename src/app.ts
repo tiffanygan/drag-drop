@@ -1,6 +1,6 @@
 import PrjInput from './model/PrjInput';
 import PrjList from './model/PrjList';
-import { PrjListType } from './model/PrjType';
+import { PrjListType } from './state/PrjType';
 import PrjManager from './state/PrjManager';
 
 const prjManager = PrjManager.getManager();

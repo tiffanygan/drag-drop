@@ -1,16 +1,29 @@
-import { PrjListType } from "./PrjType";
+import { NonNull, NthLetterMustBe } from "../util/Decorators";
+import { PrjListType } from "../state/PrjType";
 
 export default class Prj {
-  public id: Number = -1;
+  public id: number = -1;
+  @NonNull
+  @NthLetterMustBe("a", 1)
+  public name: string;
+  @NonNull
+  @NthLetterMustBe("b", 2)
+  public description: string;
+  @NonNull
+  public people: number;
 
   constructor(
-    public name: string,
-    public description: string,
-    public people: number,
+    name: string,
+    description: string,
+    people: number,
     public prjStatus: PrjListType
-  ) {}
+  ) {
+    this.name = name;
+    this.description = description;
+    this.people = people;
+  }
 
-  setId(id: Number) {
+  setId(id: number) {
     this.id = id;
   }
 }
