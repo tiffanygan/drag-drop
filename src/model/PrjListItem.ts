@@ -1,4 +1,4 @@
-import Prj from "./Prj.js";
+import Prj from "./Prj";
 
 export default class PrjListItem {
     private template: HTMLTemplateElement;

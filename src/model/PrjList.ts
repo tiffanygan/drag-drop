@@ -1,8 +1,8 @@
-import Observer from "../state/Observer.js";
-import PrjManager from "../state/PrjManager.js";
-import Prj from "./Prj.js";
-import PrjListItem from "./PrjListItem.js";
-import { PrjListType } from "./PrjType.js";
+import Observer from "../state/Observer";
+import PrjManager from "../state/PrjManager";
+import Prj from "./Prj";
+import PrjListItem from "./PrjListItem";
+import { PrjListType } from "./PrjType";
 
 export default class PrjList implements Observer {
     private template: HTMLTemplateElement;

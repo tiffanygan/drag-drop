@@ -1,7 +1,7 @@
-import PrjInput from './model/PrjInput.js';
-import PrjList from './model/PrjList.js';
-import { PrjListType } from './model/PrjType.js';
-import PrjManager from './state/PrjManager.js';
+import PrjInput from './model/PrjInput';
+import PrjList from './model/PrjList';
+import { PrjListType } from './model/PrjType';
+import PrjManager from './state/PrjManager';
 
 const prjManager = PrjManager.getManager();
 new PrjInput(prjManager);

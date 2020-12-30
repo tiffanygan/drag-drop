@@ -1,6 +1,6 @@
-import Prj from "./Prj.js";
-import PrjManager from "../state/PrjManager.js";
-import { PrjListType } from "./PrjType.js";
+import Prj from "./Prj";
+import PrjManager from "../state/PrjManager";
+import { PrjListType } from "./PrjType";
 
 export default class PrjInput {
     private template: HTMLTemplateElement;
